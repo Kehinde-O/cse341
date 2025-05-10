@@ -37,6 +37,19 @@ This is the backend API for the CSE341 professional profile application. It prov
   npm run seed
   ```
 
+## Deployment to Render
+
+1. Create a new Web Service on Render
+2. Connect your GitHub repository
+3. Configure the service with these settings:
+   - **Build Command**: `npm install`
+   - **Start Command**: `npm start`
+   - **Environment Variables**: Add the following environment variables
+     - `PORT`: Render will automatically assign a port, so this is optional
+     - `MONGODB_URI`: Your MongoDB Atlas connection string
+
+4. Click "Create Web Service"
+
 ## API Endpoints
 
 ### GET /professional
